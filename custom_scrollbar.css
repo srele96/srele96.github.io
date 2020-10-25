@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background: #350922;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+#scrollWindow {
+  scrollbar-width: none;
+}
+
+.posRelative {
+  position: relative;
+}
+
+.width80vw {
+  width: 80vw;
+}
+
+.height50vh {
+  height: 50vh;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowYAuto {
+  overflow-y: auto;
+}
+
+.heightX2 {
+  height: 500%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.width16px {
+  width: 16px;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.top0 {
+  top: 0;
+}
+
+.right0 {
+  right: 0;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+/* applied to #scrollBackground */
+.lighterBG {
+  opacity: 0.2;
+  background: #a71d6c;
+}
+
+.height50px {
+  height: 50px;
+}
+
+.width8px {
+  width: 8px;
+}
+
+.lighterBorder {
+  border: 1px solid #a71d6c;
+}
+
+.scrollbar {
+  transition: background 0.2s ease-in-out;
+  -moz-transition: background 0.2s ease-in-out;
+  -o-transition: background 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out;
+  border-radius: 5px;
+  margin: 0 4px;
+}
+
+.lighterScroll {
+  background: #f2b7d9;
+}
+
+.down, .up {
+  color: white;
+  position: absolute;
+  right: 50px;
+  font-size: 30px;
+}
+
+@keyframes moveDown {
+  from {top: 0}
+  to {top: 20px}
+}
+
+.up {
+  transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
+  top: 0;
+  animation: moveDown 1s ease-in-out infinite;
+}
+
+@keyframes moveUp {
+  from {bottom: 0}
+  to {bottom: 20px}
+}
+.down {
+  transform: rotateZ(-90deg);
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  -o-transform: rotateZ(-90deg);
+  bottom: 0;
+  animation: moveUp 1s ease-in-out infinite;
+}
+
+.titleScrollUp, .titleScrollDown {
+  color: white;
+  position: absolute;
+  right: 100px;
+}
+
+.titleScrollUp {
+  bottom: 5px;
+}
+
+.titleScrollDown {
+  top: 5px;
+}

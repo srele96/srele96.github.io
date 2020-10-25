@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="custom_scrollbar.css" type="text/css">
+  <title>Custom scrollbar</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">
+            Main home page
+          </a>
+        </li>
+        <li>
+          <a href="./xd.html">
+            Interactive emoji - XD
+          </a>
+        </li>
+        <li>
+          <a href="./custom_scrollbar.html">
+            Custom made scroll bar from div
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Scroll the box below</h1>
+  <div style="position: relative;">
+    <span class="up">></span>
+    <span class="down">></span>
+    <div class="titleScrollDown"><p>Scroll down</p></div>
+    <div class="titleScrollUp"><p>Scroll up</p></div>
+    <div
+    id="scrollWindow"
+    class="width80vw height50vh overflowYAuto lighterBorder posRelative"
+  >
+    <div class="heightX2 width100 padding50px" style="color: white;">
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+      <p>Keep scrolling</p>
+      <br><br><br><br>
+    </div>
+    <div
+      id="scrollBackground"
+      class="heightX2 width16px top0 right0 posAbsolute"></div>
+  </div>
+  <div>
+    <div
+    id="scrollbar" 
+    class="scrollbar posAbsolute top0 right0 width8px"></div>
+  </div>
+  </div>
+  <script src="custom_scrollbar.js"></script>
+</body>
+</html>

@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="xd.css" type="text/css">
-    <title>XD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage of my web dev work</title>
 </head>
 <body>
-    <div class="smily-wrap">
-        <div class="smily">
-            <div class="container">
-                <span class="xd">
-                    <span class="eyes">
-                        <span class="t-eye"></span>
-                        <span class="d-eye"></span>
-                    </span>
-                    <span class="mouth-container">
-                        <div class="mouth">
-                            <span class="upper-lip"></span>
-                            <span class="bottom-lip"></span>
-                        </div>
-                    </span>
-                </span>
-            </div>
-        </div>
-    
-        <div class="bubble">
-            <div class="chat-bubble">
-                <p class="bubble-text">Hey! Hover me.</p>
-            </div>
-            <span class="edge"></span>
-        </div>        
-    </div>
-
-
-
-    <script>
-        document.getElementsByClassName('container')[0]
-        .addEventListener('mouseenter', e => {
-            const teye = document.getElementsByClassName('t-eye')[0];
-            const deye = document.getElementsByClassName('d-eye')[0];
-
-            teye.classList.toggle('cross-t-eye');
-            deye.classList.toggle('cross-d-eye');
-
-            const bottomLip = document.getElementsByClassName('bottom-lip')[0];
-            const upperLip = document.getElementsByClassName('upper-lip')[0];
-            bottomLip.classList.toggle('big-smile');
-            upperLip.classList.toggle('close-big-smile');
-
-            const mouth = document.getElementsByClassName('mouth')[0];
-            mouth.classList.toggle('move-smile');
-
-            const textBubble = document.getElementsByClassName('bubble-text')[0];
-            textBubble.innerHTML = 'XDDDDDDDD';
-
-            const bubble = document.getElementsByClassName('bubble')[0];
-            bubble.classList.toggle('bubble-hovered');
-
-        });
-
-        document.getElementsByClassName('container')[0]
-        .addEventListener('mouseleave', e => {
-            const teye = document.getElementsByClassName('t-eye')[0];
-            const deye = document.getElementsByClassName('d-eye')[0];
-
-            teye.classList.toggle('cross-t-eye');
-            deye.classList.toggle('cross-d-eye');
-
-            const bottomLip = document.getElementsByClassName('bottom-lip')[0];
-            const upperLip = document.getElementsByClassName('upper-lip')[0];
-            bottomLip.classList.toggle('big-smile');
-            upperLip.classList.toggle('close-big-smile');
-
-            const mouth = document.getElementsByClassName('mouth')[0];
-            mouth.classList.toggle('move-smile');
-
-            const textBubble = document.getElementsByClassName('bubble-text')[0];
-            textBubble.innerHTML = 'Hey! Hover me.';
-
-            
-            const bubble = document.getElementsByClassName('bubble')[0];
-            bubble.classList.toggle('bubble-hovered');
-        });
-
-        
-    </script>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">
+            Main home page
+          </a>
+        </li>
+        <li>
+          <a href="./xd.html">
+            Interactive emoji - XD
+          </a>
+        </li>
+        <li>
+          <a href="./custom_scrollbar.html">
+            Custom made scroll bar from div
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <h2>Custom scrollbar</h2>
+        <p>Sources</p>
+        <p>Inspired by seeing scrollbar created by 
+          <a
+            target="_blank" 
+            href="facebook.com"
+            title="Facebook home page source of inspiration">
+            Facebook
+          </a>
+          I decided to create my own and learned about 
+          <a
+            target="_blank"
+            href="https://css-tricks.com/debouncing-throttling-explained-examples/"
+            title="debouncing and throttling explained in topic"
+          >
+            Debouncing and Throttling
+          </a>
+            methods for handling 
+          <a
+            target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onscroll"
+          >
+            <i>
+              onscroll
+            </i> event
+          </a>
+        </p>
+        <p><a href="./custom_scrollbar.html">This</a> was a result of my work and research</p>
+        <p>Fully responsive container with custom created scrollbar</p>
+      </article>
+      <article>
+        <h2>Interactive emoji</h2>
+        <p><a href="./xd.html">Here</a> is my work</p>
+        <p>Sources</p>
+        <p>Events used 
+          <a
+            title="Source of mouseenter event"
+            target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event">
+            <i>mouseenter</i>
+          </a>
+          and
+          <a
+            title="Source of mouseleave event"
+            target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseleave_event">
+            <i>mouseleave</i>
+          </a>
+        </p>
+        <p>Main methods used for manipulation shapes of emoji
+          <a
+            title="Source of overflow property for CSS"
+            target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow">
+            Overflow hidden of element
+          </a>
+          <a 
+            title="Source of transform property for css"
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">
+            Transform
+          </a>
+          <i>including: <b>Translate</b>, <b>rotate</b></i>
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Content created by: Srecko Kostic</p>
+    <p>Web developer</p>
+    <p>Contact: srele96@gmail.com</p>
+  </footer>
 </body>
 </html>
