@@ -9,7 +9,7 @@ var conversation = document.getElementsByClassName('conversation')[0];
 function voldemortGone() {
   voldemort.classList.toggle('gone');
   // reset all at the end
-  setTimeout(reset, 500);
+  setTimeout(reset, 1000);
 }
 
 function voldemortDisappear() {
