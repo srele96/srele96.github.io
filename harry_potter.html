@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./harry_potter.css" type="text/css">
+  <title>Harry Potter vs. Voldemort animation</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html">
+            Main home page
+          </a>
+        </li>
+        <li>
+          <a href="./xd.html">
+            Interactive emoji - XD
+          </a>
+        </li>
+        <li>
+          <a href="./custom_scrollbar.html">
+            Custom made scroll bar from div
+          </a>
+        </li>
+        <li>
+          <a href="./harry_potter.html">
+            Harry Potter vs Voldemort
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="voldemortVsPotter">
+      <div id="slider" class="slide">
+        <!-- voldemort -->
+        <div id="voldemort" class="voldemortWrapper">
+          <div class="imgContainer">
+            <img
+              src="./harry_potter/voldemort.png"
+              alt="lord voldemort holding wand">
+          </div>
+          <div id="brokenGlass" class="imgContainer brokenGlass">
+            <img src="./harry_potter/brokenglass.png" alt="transparent broken glass">
+          </div>
+        </div>
+        <!-- spell casted by voldemort -->
+        <div class="avadaKedavra">
+          <div id="avadaKedavra" class="slideSpell">
+            <div class="imgContainer spell">
+              <img 
+                src="./harry_potter/magic.png" 
+                alt="green thunder used for voldemort magic animation">
+            </div>
+          </div>
+        </div>
+        <!-- potter -->
+        <div id="potter" class="potterWrapper">
+          <div class="imgContainer potter">
+            <img 
+              src="./harry_potter/potter.png"
+              alt="harry potters name">
+          </div>
+          <div id="wand" class="imgContainer">
+            <img 
+              src="./harry_potter/wand.png"
+              alt="harry potters wand">
+          </div>
+          <div id="shieldedPotter" class="shieldedPotter">
+            <div class="imgContainer">
+              <img 
+                src="./harry_potter/potter.png"
+                alt="harry potters name">
+            </div>
+            <div class="imgContainer shieldContainer">
+              <img
+                class="shield"
+                src="./harry_potter/shield.jpg"
+                alt="shield for harry potters protection">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conversation">
+      <p>Click on Harry Potter to see what happens</p>
+    </div>
+  </main>
+
+  <script src="harry_potter.js"></script>
+</body>
+</html>

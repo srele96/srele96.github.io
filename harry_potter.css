@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.imgContainer {
+  max-width: 100px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.shield {
+  opacity: 0.2;
+}
+
+.shieldContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px green;
+}
+
+.shakeWand {
+  animation: shakeWand 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
+}
+
+@keyframes shakeWand {
+  0% {
+    transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(-36deg);
+    -ms-transform: rotateZ(-36deg);
+    -moz-transform: rotateZ(-36deg);
+    -o-transform: rotateZ(-36deg);
+    -webkit-transform: rotateZ(-36deg);
+  }
+  100% {
+    transform: rotateZ(-24deg);
+    -ms-transform: rotateZ(-24deg);
+    -moz-transform: rotateZ(-24deg);
+    -o-transform: rotateZ(-24deg);
+    -webkit-transform: rotateZ(-24deg);
+  }
+}
+@-o-keyframes shakeWand {
+  0% {
+    transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(-36deg);
+    -ms-transform: rotateZ(-36deg);
+    -moz-transform: rotateZ(-36deg);
+    -o-transform: rotateZ(-36deg);
+    -webkit-transform: rotateZ(-36deg);
+  }
+  100% {
+    transform: rotateZ(-24deg);
+    -ms-transform: rotateZ(-24deg);
+    -moz-transform: rotateZ(-24deg);
+    -o-transform: rotateZ(-24deg);
+    -webkit-transform: rotateZ(-24deg);
+  }
+}
+@-moz-keyframes shakeWand {
+  0% {
+    transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(-36deg);
+    -ms-transform: rotateZ(-36deg);
+    -moz-transform: rotateZ(-36deg);
+    -o-transform: rotateZ(-36deg);
+    -webkit-transform: rotateZ(-36deg);
+  }
+  100% {
+    transform: rotateZ(-24deg);
+    -ms-transform: rotateZ(-24deg);
+    -moz-transform: rotateZ(-24deg);
+    -o-transform: rotateZ(-24deg);
+    -webkit-transform: rotateZ(-24deg);
+  }
+}
+@-webkit-keyframes shakeWand {
+  0% {
+    transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(-36deg);
+    -ms-transform: rotateZ(-36deg);
+    -moz-transform: rotateZ(-36deg);
+    -o-transform: rotateZ(-36deg);
+    -webkit-transform: rotateZ(-36deg);
+  }
+  100% {
+    transform: rotateZ(-24deg);
+    -ms-transform: rotateZ(-24deg);
+    -moz-transform: rotateZ(-24deg);
+    -o-transform: rotateZ(-24deg);
+    -webkit-transform: rotateZ(-24deg);
+  }
+}
+
+/* upon magic impact on shield this should flash */
+.shieldedPotter {
+  opacity: 0;
+  max-width: 100px;
+  position: relative;
+}
+
+.shieldPotter {
+  opacity: 1;
+}
+
+.potter {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.potterWrapper {
+  margin-top: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#wand {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  transform: rotateZ(-30deg);
+}
+
+.voldemortVsPotter {
+  overflow: hidden;
+  max-width: 280px;
+}
+
+.voldemortWrapper {
+  position: relative;
+  margin-right: auto;
+}
+
+.slide {
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transform: translateX(-55%);
+  width: 100%;
+  display: flex;
+}
+
+.showVoldemort {
+  transform: translateX(0%);
+}
+
+.avadaKedavra {
+  overflow: hidden;
+  position: absolute;
+  left: 25%;
+  top: -30%;
+}
+
+.spell {
+  transform: rotateZ(-80deg);
+  -moz-transform:  rotateZ(-80deg);
+  -ms-transform:  rotateZ(-80deg);
+  -o-transform:  rotateZ(-80deg);
+  -webkit-transform:  rotateZ(-80deg);
+}
+
+.slideSpell {
+  transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.castAvadaKedavra {
+  animation: castSpell 0.5s linear;
+  -moz-animation:  castSpell 0.5s linear;
+  -ms-zoom-animation:  castSpell 0.5s linear;
+  -o-animation:  castSpell 0.5s linear;
+  -webkit-animation:  castSpell 0.5s linear;
+}
+
+@keyframes castSpell {
+  0% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-o-keyframes castSpell {
+  0% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-moz-keyframes castSpell {
+  0% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes castSpell {
+  0% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+.reflectAvadaKedavra {
+  transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+}
+
+.brokenGlass {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.brokenVoldemort {
+  opacity: 1;
+}
+
+.disapper {
+  transition: 1s;
+  opacity: 0.1;
+}
+
+.gone {
+  opacity: 0;
+}
+
+.voldemortVsPotter {
+  margin-top: 25px;
+}
+
+.conversation {
+  margin-top: 5px;
+}
