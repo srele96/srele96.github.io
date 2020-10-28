@@ -25,6 +25,10 @@ p {
   color: white;
 }
 
+#scrollWindow::-webkit-scrollbar {
+  display: none;
+}
+
 #scrollWindow {
   scrollbar-width: none;
 }
