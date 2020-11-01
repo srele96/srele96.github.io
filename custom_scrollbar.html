@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="custom_scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="base.css" type="text/css">
   <title>Custom scrollbar</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
   </header>
   <h1>Scroll the box below</h1>
   <p>If you are on the phone, touch the box below to see the scroll progress</p>
-  <div style="position: relative;">
+  <div style="position: relative; width: max-content;">
     <span class="up">></span>
     <span class="down">></span>
     <div class="titleScrollDown"><p>Scroll down</p></div>
@@ -69,13 +70,19 @@
     <div
       id="scrollBackground"
       class="heightX2 width16px top0 right0 posAbsolute lighterBG"></div>
+    </div>
+    <div>
+      <div
+      id="scrollbar" 
+      class="scrollbar posAbsolute top0 right0 width8px lighterScroll"></div>
+    </div>
   </div>
-  <div>
-    <div
-    id="scrollbar" 
-    class="scrollbar posAbsolute top0 right0 width8px lighterScroll"></div>
-  </div>
-  </div>
+
+  <footer>
+    <p>Content created by: Srecko Kostic</p>
+    <p>Web developer</p>
+    <p>Contact: srele96@gmail.com</p>
+  </footer>
   <script src="custom_scrollbar.js"></script>
 </body>
 </html>
