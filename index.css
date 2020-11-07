@@ -1,6 +1,13 @@
 article {
+  max-width: 600px;
+  border: 1px solid #929292;
+  border-radius: 1rem;
+  margin: 5px 5px 1rem 5px;
+  padding: 1rem 1rem;
+}
+article > h2 {
+  border-bottom: 1px solid #929292;
   margin-bottom: 1rem;
-  padding: 0 1rem;
 }
 
 main {
