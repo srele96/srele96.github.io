@@ -2,16 +2,6 @@ var scrollWindow = document.getElementById('scrollWindow');
 var scrollBackground = document.getElementById('scrollBackground');
 var scrollbar = document.getElementById('scrollbar');
 
-// scrollWindow.addEventListener('mouseenter', function(e) {
-//   scrollBackground.classList.toggle('lighterBG');
-//   scrollbar.classList.toggle('lighterScroll');
-// });
-
-// scrollWindow.addEventListener('mouseleave', function(e) {
-//   scrollBackground.classList.toggle('lighterBG');
-//   scrollbar.classList.toggle('lighterScroll');
-// });
-
 function calculateScrollHeight(totalWindowHeight, totalScrollHeight) {
   // height of scrollbar is proportional to:
   // 2x bigger scroll content has 1/2 window scroll bar height

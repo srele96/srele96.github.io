@@ -36,7 +36,7 @@
   position: absolute;
   display: block;
   margin: 0 auto;
-  border-left: 2px solid white;
+  border-left: 2px solid black;
   width: 200%;
   height: 45%;
   border-radius: 50%;
@@ -57,7 +57,7 @@
 }
 
 .cross-t-eye {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
   border-radius: 0;
   height: 95%;
   transform-origin: left top;
@@ -73,7 +73,7 @@
 }
 
 .cross-d-eye {
-  border-left: 1px solid white;
+  border-left: 1px solid black;
   border-radius: 0;
   height: 95%;
   transform-origin: left bottom;
@@ -98,7 +98,7 @@
   -moz-transition-delay: 0.24s;
   -o-transition-delay: 0.24s;
   -webkit-transition-delay: 0.24s;
-  background:  rgb(42,42,42);
+  background-color: #F27121;
   display: block;
 }
 
@@ -111,7 +111,7 @@
   width: 70%;
   height: 70%;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid black;
   display: block;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .close-big-smile {
-  border-right: 1px solid white;
+  border-right: 1px solid black;
 }
 
 .move-smile {
@@ -133,8 +133,9 @@
 }
 
 .smily {
+  background-color: #F27121;
   margin-top: 50px;
-  border: 1px solid white;
+  border: 1px solid black;
   transform: rotateZ(90deg);
   -moz-transform: rotateZ(90deg);
   -ms-transform: rotateZ(90deg);
@@ -146,15 +147,16 @@
 }
 
 .smily:hover {
-  box-shadow: 1px 1px 3px white,
-    -1px -1px 3px white;
+  box-shadow: 1px 1px 3px black,
+    -1px -1px 3px black;
 }
 
 .chat-bubble {
+  background-color: #F27121;
   width: max-content;
   padding: 15px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 .bubble {
@@ -176,9 +178,9 @@
   -webkit-transform: rotateZ(-20deg);
   width: 18px;
   height: 17px;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
-  background:  rgb(42,42,42);
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  background:  #F27121;
   position: absolute;
   left: 10px;
   bottom: 0;

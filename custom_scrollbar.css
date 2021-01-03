@@ -1,30 +1,21 @@
 
-a {
-  color: white;
-}
-
-h1 {
-  color: white;
-}
-
-p {
-  color: white;
-}
-
 #scrollWindow::-webkit-scrollbar {
   display: none;
 }
 
 #scrollWindow {
   scrollbar-width: none;
+  flex: 1;
+}
+
+.window-wrapper {
+  margin: 0 2rem;
+  position: relative;
+  display: flex;
 }
 
 .posRelative {
   position: relative;
-}
-
-.width80vw {
-  width: 80vw;
 }
 
 .height50vh {
@@ -99,13 +90,27 @@ p {
 }
 
 .down, .up {
-  color: white;
   position: absolute;
   right: 50px;
   font-size: 30px;
 }
 
 @keyframes moveDown {
+  from {top: 0}
+  to {top: 20px}
+}
+
+@-o-keyframes moveDown {
+  from {top: 0}
+  to {top: 20px}
+}
+
+@-moz-keyframes moveDown {
+  from {top: 0}
+  to {top: 20px}
+}
+
+@-webkit-keyframes moveDown {
   from {top: 0}
   to {top: 20px}
 }
@@ -124,6 +129,22 @@ p {
   from {bottom: 0}
   to {bottom: 20px}
 }
+
+@-o-keyframes moveUp {
+  from {bottom: 0}
+  to {bottom: 20px}
+}
+
+@-moz-keyframes moveUp {
+  from {bottom: 0}
+  to {bottom: 20px}
+}
+
+@-webkit-keyframes moveUp {
+  from {bottom: 0}
+  to {bottom: 20px}
+}
+
 .down {
   transform: rotateZ(-90deg);
   -moz-transform: rotateZ(-90deg);
@@ -135,7 +156,6 @@ p {
 }
 
 .titleScrollUp, .titleScrollDown {
-  color: white;
   position: absolute;
   right: 100px;
 }

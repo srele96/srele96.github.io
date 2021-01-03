@@ -1,13 +1,13 @@
 .learnLangCard {
   width: 12rem;
   height: 10rem;
-  border: 1px solid #bbbbbb;
+  border: 1px solid black;
   padding: 1rem 1rem;
   border-radius: 1rem;
 }
-.learnLangCard>h1 {
+.learnLangCard>h2 {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid black;
 }
 
 .plang {
@@ -67,7 +67,7 @@
 }
 /* ------------------------------------------------------- */
 .symbol {
-  color: #bbbbbb;
+  color: black;
   position: relative;
   display: flex;
   width: 45px;
@@ -104,18 +104,18 @@
 /* ------------------------------------------------------ */
 /* add NO duplicate borders */
 .row1, .row2, .row3 {
-  border-right: 1px solid #929292;
-  border-bottom:  1px solid #929292;
+  border-right: 1px solid black;
+  border-bottom:  1px solid black;
 }
 
 .row1 {
-  border-top: 1px solid #929292;
+  border-top: 1px solid black;
 }
 
 .row1:first-child,
 .row2:first-child, 
 .row3:first-child {
-  border-left: 1px solid #929292;
+  border-left: 1px solid black;
 }
 
 /* ------------------------------------------------------ */
