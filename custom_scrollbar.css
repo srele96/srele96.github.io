@@ -11,6 +11,10 @@
 .window-wrapper {
   margin: 0 2rem;
   position: relative;
+  display: none;
+}
+
+.toggle-scroll-window {
   display: flex;
 }
 

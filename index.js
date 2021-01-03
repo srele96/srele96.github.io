@@ -38,3 +38,18 @@ function handleClickOutsideMenu(e) {
     closeMenu();
   }
 }
+
+// ----------------------------------------------------------------------------
+
+var toggleCustomScrollWindowBtn = document.querySelector(
+  '#toggle-custom-scroll-window'
+);
+var customScrollWindowWrapper = document.querySelector('.window-wrapper');
+
+toggleCustomScrollWindowBtn.addEventListener('click', toggleCustomScrollWindow);
+
+function toggleCustomScrollWindow() {
+  // class located in custom_scrollbar.css
+  customScrollWindowWrapper.classList.toggle('toggle-scroll-window')
+}
+
