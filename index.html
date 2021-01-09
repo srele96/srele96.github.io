@@ -9,14 +9,15 @@
   <meta name="author" content="Srecko Kostic" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="aGkTJNB0UDn8rwZxon3HcAJ3jBRHAiPo0FtjQF5ETE4" />
-  <link rel="stylesheet" href="index.css" type="text/css">
-  <link rel="stylesheet" href="xd.css" type="text/css">
-  <link rel="stylesheet" href="harry_potter.css" type="text/css">
-  <link rel="stylesheet" href="custom_scrollbar.css" type="text/css">
-  <link rel="stylesheet" href="card.css" type="text/css">
+  <link rel="stylesheet" href="./index.css" type="text/css">
+  <link rel="stylesheet" href="./xd.css" type="text/css">
+  <link rel="stylesheet" href="./harry_potter.css" type="text/css">
+  <link rel="stylesheet" href="./custom_scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="./card.css" type="text/css">
   <link rel="stylesheet" href="./bgplang.css" type="text/css">
   <link rel="stylesheet" href="./sharingan.css" type="text/css">
   <link rel="stylesheet" href="./christmas-tree.css" type="text/css">
+  <link rel="stylesheet" href="./slider.css" type="text/css">
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -447,6 +448,50 @@
           </div>
         </div>
       </section>
+      <section class="flex-section">
+        <div class="window">
+          <div class="window__slider">
+            <div class="window__slider__img-container window__slider__img-container--opacity">
+              <img
+              src="https://picsum.photos/id/1067/500/400" 
+              alt="city view from sky">
+            </div>
+            <div class="window__slider__img-container">
+              <img
+              src="https://picsum.photos/id/1076/500/400" 
+              alt="tall building view from bottom">
+            </div>
+            <div class="window__slider__img-container">
+              <img
+              src="https://picsum.photos/id/111/500/400" 
+              alt="old model of a car">
+            </div>
+            <div class="window__slider__img-container">
+              <img
+              src="https://picsum.photos/id/249/500/400" 
+              alt="bridge and city view from one side of river">
+            </div>
+            <div class="window__slider__img-container">
+              <img
+              src="https://picsum.photos/id/724/500/400" 
+              alt="forest and sky view, aurora borealis in the sky">
+            </div>
+          </div>
+          <button class="window__slide-left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="window__slide-right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="window__current-img">
+            <button class="window__current-img__btn window__current-img__btn--current"></button>
+            <button class="window__current-img__btn"></button>
+            <button class="window__current-img__btn"></button>
+            <button class="window__current-img__btn"></button>
+            <button class="window__current-img__btn"></button>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
   <footer>
@@ -463,6 +508,7 @@
   <script src="./custom_scrollbar.js"></script>
   <script src="./bgplang.js"></script>
   <script src="./sharigan.js"></script>
+  <script src="./slider.js"></script>
   <script src="https://kit.fontawesome.com/d18ab7339c.js" crossorigin="anonymous"></script>
 </body>
 </html>
