@@ -22,6 +22,7 @@ function toggleMenu() {
 
 function closeMenu() {
   isActive = false;
+  smallScreenMenuBtn.innerHTML = isNotActiveIcon;
   navMenu.classList.remove('menu-visible');
   body.classList.remove('disable-scroll');
 }
